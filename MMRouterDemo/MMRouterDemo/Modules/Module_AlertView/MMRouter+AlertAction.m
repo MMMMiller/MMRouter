@@ -35,8 +35,7 @@ NSString * const kMMRouterActionPresentAlert = @"nativePresentAlert";
     
     [self performTarget:kMMRouterTargetAlert
                  action:kMMRouterActionPresentAlert
-                 params:paramsToSend
-      shouldCacheTarget:NO];
+                 params:paramsToSend];
 }
 
 @end

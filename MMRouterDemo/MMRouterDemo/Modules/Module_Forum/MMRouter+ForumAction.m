@@ -18,15 +18,13 @@ NSString * const kMMRouterActionNativeFetchForumVC = @"nativeFetchForumVC";
 - (void)MMRouter_presentForum {
     [self performTarget:kMMRouterTargetForum
                  action:kMMRouterActionPresentForum
-                 params:nil
-      shouldCacheTarget:NO];
+                 params:nil];
 }
 
 - (UIViewController *)MMRouter_fetchForumVC {
     UIViewController *viewController = [self performTarget:kMMRouterTargetForum
                                                     action:kMMRouterActionNativeFetchForumVC
-                                                    params:nil
-                                         shouldCacheTarget:NO];
+                                                    params:nil];
     if ([viewController isKindOfClass:[UIViewController class]]) {
         return viewController;
     } else {

@@ -19,10 +19,7 @@
 // 本地组件调用入口
 - (id)performTarget:(NSString *)targetName
              action:(NSString *)actionName
-             params:(NSDictionary *)params
-  shouldCacheTarget:(BOOL)shouldCacheTarget;
-
-- (void)releaseCachedTargetWithTargetName:(NSString *)targetName;
+             params:(NSDictionary *)params;
 
 @end
 

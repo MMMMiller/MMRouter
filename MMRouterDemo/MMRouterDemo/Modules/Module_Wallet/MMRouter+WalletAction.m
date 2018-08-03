@@ -18,15 +18,13 @@ NSString * const kMMRouterActionNativeFetchWalletVC = @"nativeFetchWalletVC";
 - (void)MMRouter_presentWallet {
     [self performTarget:kMMRouterTargetWallet
                  action:kMMRouterActionPresentWallet
-                 params:nil
-      shouldCacheTarget:NO];
+                 params:nil];
 }
 
 - (UIViewController *)MMRouter_fetchWalletVC {
     UIViewController *viewController = [self performTarget:kMMRouterTargetWallet
                                                     action:kMMRouterActionNativeFetchWalletVC
-                                                    params:nil
-                                         shouldCacheTarget:NO];
+                                                    params:nil];
     if ([viewController isKindOfClass:[UIViewController class]]) {
         return viewController;
     } else {

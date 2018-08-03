@@ -17,8 +17,7 @@ NSString * const kMMRouterActionNativeFetchShopCartVC = @"nativeFetchShopCartVC"
 - (UIViewController *)MMRouter_fetchShopCartVC {
     UIViewController *viewController = [self performTarget:kMMRouterTargetShopCart
                                                     action:kMMRouterActionNativeFetchShopCartVC
-                                                    params:nil
-                                         shouldCacheTarget:NO];
+                                                    params:nil];
     if ([viewController isKindOfClass:[UIViewController class]]) {
         return viewController;
     } else {

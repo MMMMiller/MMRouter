@@ -23,29 +23,25 @@ NSString * const kMMRouterActionNativeFetchSpecialTopicVC = @"nativeFetchSpecial
 - (void)MMRouter_presentBeautyMall {
     [self performTarget:kMMRouterTargetMall
                  action:kMMRouterActionPresentMall
-                 params:nil
-      shouldCacheTarget:NO];
+                 params:nil];
 }
 
 - (void)MMRouter_presentSpecialTopic:(NSDictionary *)params {
     [self performTarget:kMMRouterTargetMall
                  action:kMMRouterActionPresentSpecialTopic
-                 params:params
-      shouldCacheTarget:NO];
+                 params:params];
 }
 
 - (void)MMRouter_presentGoodsDetail:(NSDictionary *)params {
     [self performTarget:kMMRouterTargetMall
                  action:kMMRouterActionPresentGoodsDetail
-                 params:params
-      shouldCacheTarget:NO];
+                 params:params];
 }
 
 - (UIViewController *)MMRouter_fetchMallVC {
     UIViewController *viewController = [self performTarget:kMMRouterTargetMall
                                                     action:kMMRouterActionNativeFetchMallVC
-                                                    params:nil
-                                         shouldCacheTarget:NO];
+                                                    params:nil];
     if ([viewController isKindOfClass:[UIViewController class]]) {
         return viewController;
     } else {
@@ -56,8 +52,7 @@ NSString * const kMMRouterActionNativeFetchSpecialTopicVC = @"nativeFetchSpecial
 - (UIViewController *)MMRouter_fetchGoodsDetialVCWithGoodsId:(NSInteger)goodsId {
     UIViewController *viewController = [self performTarget:kMMRouterTargetMall
                                                     action:kMMRouterActionNativeFetchGoodsDetailVC
-                                                    params:@{@"goodsId":@(goodsId)}
-                                         shouldCacheTarget:NO];
+                                                    params:@{@"goodsId":@(goodsId)}];
     if ([viewController isKindOfClass:[UIViewController class]]) {
         return viewController;
     } else {
@@ -68,8 +63,7 @@ NSString * const kMMRouterActionNativeFetchSpecialTopicVC = @"nativeFetchSpecial
 - (UIViewController *)MMRouter_fetchSpecialTopicVCWithTopicId:(NSInteger)topicId {
     UIViewController *viewController = [self performTarget:kMMRouterTargetMall
                                                     action:kMMRouterActionNativeFetchSpecialTopicVC
-                                                    params:@{@"topicId":@(topicId)}
-                                         shouldCacheTarget:NO];
+                                                    params:@{@"topicId":@(topicId)}];
     if ([viewController isKindOfClass:[UIViewController class]]) {
         return viewController;
     } else {

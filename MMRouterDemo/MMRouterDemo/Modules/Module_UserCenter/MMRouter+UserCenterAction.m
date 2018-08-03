@@ -18,8 +18,7 @@ NSString * const kMMRouterActionNativeFetchUserCenterVC = @"nativeFetchUserCente
 - (UIViewController *)MMRouter_fetchUserCenterVC {
     UIViewController *viewController = [self performTarget:kMMRouterTargetUserCenter
                                                     action:kMMRouterActionNativeFetchUserCenterVC
-                                                    params:nil
-                                         shouldCacheTarget:NO];
+                                                    params:nil];
     if ([viewController isKindOfClass:[UIViewController class]]) {
         return viewController;
     } else {
