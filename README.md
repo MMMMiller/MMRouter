@@ -1,2 +1,2 @@
-# MMScrollBanner
-轮播图控件，直接pod 'MMScrollBanner' 即可使用
+# MMRouter
+路由中间件，直接pod 'MMRouter' 即可使用
