@@ -11,10 +11,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/MMMille/MMRouter.git', :tag => s.version.to_s }
   
   s.requires_arc = true
-  s.source_files = 'MMRouter/**/*.{h,m}'
+  s.source_files = 'MMRouter/*.{h,m}'
 
   s.libraries = 'z', 'sqlite3'
   s.frameworks = 'UIKit', 'CoreFoundation'
-  s.dependency 'YYKit'
 end
 #pod trunk push MMScrollBanner.podspec --allow-warnings
