@@ -8,6 +8,13 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
+
+#import "MMRouter+MallActions.h"
+#import "MMRouter+ForumAction.h"
+#import "MMRouter+UserCenterAction.h"
+#import "MMRouter+ShopCartAction.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +24,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UIViewController *mallVC = [[MMRouter sharedInstance] MMRouter_fetchMallVC];
+    UINavigationController *mallNavi = [[UINavigationController alloc]initWithRootViewController:mallVC];
+    
+    UIViewController *forumVC = [[MMRouter sharedInstance] MMRouter_fetchForumVC];
+    UINavigationController *forumNavi = [[UINavigationController alloc]initWithRootViewController:forumVC];
+    
+    UIViewController *cartVC = [[MMRouter sharedInstance] MMRouter_fetchShopCartVC];
+    UINavigationController *cartNavi = [[UINavigationController alloc]initWithRootViewController:cartVC];
+    
+    UIViewController *userCenterVC = [[MMRouter sharedInstance] MMRouter_fetchUserCenterVC];
+    UINavigationController *userCenterNavi = [[UINavigationController alloc]initWithRootViewController:userCenterVC];
+    
+    UITabBarController *tab = [[UITabBarController alloc] init];
+    [tab addChildViewController:mallNavi];
+    [tab addChildViewController:forumNavi];
+    [tab addChildViewController:cartNavi];
+    [tab addChildViewController:userCenterNavi];
+    
+    self.window.rootViewController = tab;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

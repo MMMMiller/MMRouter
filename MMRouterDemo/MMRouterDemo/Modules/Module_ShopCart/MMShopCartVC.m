@@ -1,29 +1,36 @@
 //
-//  MMMallViewController.m
+//  ShopCartVC.m
 //  MMRouterDemo
 //
 //  Created by xueMingLuan on 2018/8/3.
 //  Copyright © 2018 xueMingLuan. All rights reserved.
 //
 
-#import "MMMallVC.h"
+#import "MMShopCartVC.h"
 
-@interface MMMallVC ()
+@interface MMShopCartVC ()
 
 @end
 
-@implementation MMMallVC
+@implementation MMShopCartVC
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.title = @"购物车";
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"商城首页";
     self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 /*
 #pragma mark - Navigation
 

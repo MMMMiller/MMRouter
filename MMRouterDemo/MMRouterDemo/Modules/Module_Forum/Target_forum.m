@@ -13,6 +13,7 @@
 #import "UIViewController+MMExtension.h"
 
 @implementation Target_forum
+
 - (void)Action_presentForum:(NSDictionary *)params {
     MMForumVC *forumVC = [[MMForumVC alloc] init];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:forumVC];
@@ -20,4 +21,11 @@
                                                           animated:YES
                                                         completion:nil];
 }
+
+- (UIViewController *)Action_nativeFetchForumVC:(NSDictionary *)params {
+    // 因为action是从属于ModuleA的，所以action直接可以使用ModuleA里的所有声明
+    MMForumVC *forumVC = [[MMForumVC alloc] init];
+    return forumVC;
+}
+
 @end

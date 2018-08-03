@@ -1,5 +1,5 @@
 //
-//  MMRouter+WalletAction.h
+//  MMRouter+ForumAction.h
 //  MMRouterDemo
 //
 //  Created by xueMingLuan on 2018/8/3.
@@ -7,11 +7,16 @@
 //
 
 #import "MMRouter.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMRouter (WalletAction)
-- (void)MMRouter_presentWallet;
+@interface MMRouter (ForumAction)
+
+- (void)MMRouter_presentForum;
+
+- (UIViewController *)MMRouter_fetchForumVC;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,23 +1,29 @@
 //
-//  MMForumViewController.m
+//  UserCenterVC.m
 //  MMRouterDemo
 //
 //  Created by xueMingLuan on 2018/8/3.
 //  Copyright © 2018 xueMingLuan. All rights reserved.
 //
 
-#import "MMForumVC.h"
+#import "MMUserCenterVC.h"
 
-@interface MMForumVC ()
+@interface MMUserCenterVC ()
 
 @end
 
-@implementation MMForumVC
+@implementation MMUserCenterVC
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.title = @"用户中心";
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"论坛首页";
     self.view.backgroundColor = [UIColor lightGrayColor];
 }
 

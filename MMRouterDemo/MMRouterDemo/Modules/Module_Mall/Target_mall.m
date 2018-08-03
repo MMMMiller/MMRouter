@@ -40,4 +40,19 @@
                                                         completion:nil];
 }
 
+- (UIViewController *)Action_nativeFetchMallVC:(NSDictionary *)params {
+    MMMallVC *mallVC = [[MMMallVC alloc] init];
+    return mallVC;
+}
+
+- (UIViewController *)Action_nativeFetchGoodsDetailVC:(NSDictionary *)params {
+    MMGoodsDetailVC *goodsDetailVC = [[MMGoodsDetailVC alloc] initWithGoodsId:params[@"goodsId"]];
+    return goodsDetailVC;
+}
+
+- (UIViewController *)Action_nativeFetchSpecialTopicVC:(NSDictionary *)params {
+    MMSpecialTopicVC *specialTopicVC = [[MMSpecialTopicVC alloc] initWithTopicId:params[@"topicId"]];
+    return specialTopicVC;
+}
+
 @end

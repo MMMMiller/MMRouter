@@ -7,6 +7,7 @@
 //
 
 #import "MMRouter.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)MMRouter_presentMall;
 - (void)MMRouter_presentSpecialTopic:(NSDictionary *)params;
 - (void)MMRouter_presentGoodsDetail:(NSDictionary *)params;
+
+- (UIViewController *)MMRouter_fetchMallVC;
+- (UIViewController *)MMRouter_fetchGoodsDetialVCWithGoodsId:(NSInteger)goodsId;
+- (UIViewController *)MMRouter_fetchSpecialTopicVCWithTopicId:(NSInteger)topicId;
 
 @end
 

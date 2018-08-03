@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)Action_presentMall:(NSDictionary *)params;
 - (void)Action_presentSpecialTopic:(NSDictionary *)params;
 - (void)Action_presentGoodsDetail:(NSDictionary *)params;
+
+- (UIViewController *)Action_nativeFetchMallVC:(NSDictionary *)params;
+- (UIViewController *)Action_nativeFetchGoodsDetailVC:(NSDictionary *)params;
+- (UIViewController *)Action_nativeFetchSpecialTopicVC:(NSDictionary *)params;
+
 @end
 
 NS_ASSUME_NONNULL_END

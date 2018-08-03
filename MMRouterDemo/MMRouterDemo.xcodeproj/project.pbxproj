@@ -28,6 +28,12 @@
 		E03292052114462F00152273 /* MMRouter+ForumAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E03292042114462F00152273 /* MMRouter+ForumAction.m */; };
 		E03292092114490500152273 /* MMRouter+AlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E03292082114490500152273 /* MMRouter+AlertAction.m */; };
 		E032920C2114493800152273 /* Target_alert.m in Sources */ = {isa = PBXBuildFile; fileRef = E032920B2114493800152273 /* Target_alert.m */; };
+		E0329211211451F100152273 /* Target_userCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0329210211451F100152273 /* Target_userCenter.m */; };
+		E03292142114521400152273 /* MMRouter+UserCenterAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E03292132114521400152273 /* MMRouter+UserCenterAction.m */; };
+		E03292172114527200152273 /* MMUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E03292162114527200152273 /* MMUserCenterVC.m */; };
+		E032921B2114532E00152273 /* Target_shopCart.m in Sources */ = {isa = PBXBuildFile; fileRef = E032921A2114532E00152273 /* Target_shopCart.m */; };
+		E032921E2114533B00152273 /* MMRouter+ShopCartAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E032921D2114533B00152273 /* MMRouter+ShopCartAction.m */; };
+		E03292212114579F00152273 /* MMShopCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E03292202114579F00152273 /* MMShopCartVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +77,18 @@
 		E03292082114490500152273 /* MMRouter+AlertAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MMRouter+AlertAction.m"; sourceTree = "<group>"; };
 		E032920A2114493800152273 /* Target_alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_alert.h; sourceTree = "<group>"; };
 		E032920B2114493800152273 /* Target_alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_alert.m; sourceTree = "<group>"; };
+		E032920F211451F100152273 /* Target_userCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_userCenter.h; sourceTree = "<group>"; };
+		E0329210211451F100152273 /* Target_userCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_userCenter.m; sourceTree = "<group>"; };
+		E03292122114521400152273 /* MMRouter+UserCenterAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMRouter+UserCenterAction.h"; sourceTree = "<group>"; };
+		E03292132114521400152273 /* MMRouter+UserCenterAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MMRouter+UserCenterAction.m"; sourceTree = "<group>"; };
+		E03292152114527200152273 /* MMUserCenterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMUserCenterVC.h; sourceTree = "<group>"; };
+		E03292162114527200152273 /* MMUserCenterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMUserCenterVC.m; sourceTree = "<group>"; };
+		E03292192114532E00152273 /* Target_shopCart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_shopCart.h; sourceTree = "<group>"; };
+		E032921A2114532E00152273 /* Target_shopCart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_shopCart.m; sourceTree = "<group>"; };
+		E032921C2114533B00152273 /* MMRouter+ShopCartAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMRouter+ShopCartAction.h"; sourceTree = "<group>"; };
+		E032921D2114533B00152273 /* MMRouter+ShopCartAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MMRouter+ShopCartAction.m"; sourceTree = "<group>"; };
+		E032921F2114579F00152273 /* MMShopCartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMShopCartVC.h; sourceTree = "<group>"; };
+		E03292202114579F00152273 /* MMShopCartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMShopCartVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +122,8 @@
 		E03291BC21142DA300152273 /* MMRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
-				E0329206211448C400152273 /* Module_AlertView */,
 				E03291F02114336100152273 /* Category */,
-				E03291DB21142E5300152273 /* Module_Forum */,
-				E03291DC21142E5300152273 /* Module_Mall */,
-				E03291DD21142E5300152273 /* Module_Wallet */,
+				E032920D2114518A00152273 /* Modules */,
 				E03291BD21142DA300152273 /* AppDelegate.h */,
 				E03291BE21142DA300152273 /* AppDelegate.m */,
 				E03291C021142DA300152273 /* ViewController.h */,
@@ -195,6 +210,45 @@
 			path = Module_AlertView;
 			sourceTree = "<group>";
 		};
+		E032920D2114518A00152273 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E0329206211448C400152273 /* Module_AlertView */,
+				E0329218211452DA00152273 /* Module_ShopCart */,
+				E032920E211451DE00152273 /* Module_UserCenter */,
+				E03291DB21142E5300152273 /* Module_Forum */,
+				E03291DC21142E5300152273 /* Module_Mall */,
+				E03291DD21142E5300152273 /* Module_Wallet */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E032920E211451DE00152273 /* Module_UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E03292122114521400152273 /* MMRouter+UserCenterAction.h */,
+				E03292132114521400152273 /* MMRouter+UserCenterAction.m */,
+				E032920F211451F100152273 /* Target_userCenter.h */,
+				E0329210211451F100152273 /* Target_userCenter.m */,
+				E03292152114527200152273 /* MMUserCenterVC.h */,
+				E03292162114527200152273 /* MMUserCenterVC.m */,
+			);
+			path = Module_UserCenter;
+			sourceTree = "<group>";
+		};
+		E0329218211452DA00152273 /* Module_ShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				E032921C2114533B00152273 /* MMRouter+ShopCartAction.h */,
+				E032921D2114533B00152273 /* MMRouter+ShopCartAction.m */,
+				E03292192114532E00152273 /* Target_shopCart.h */,
+				E032921A2114532E00152273 /* Target_shopCart.m */,
+				E032921F2114579F00152273 /* MMShopCartVC.h */,
+				E03292202114579F00152273 /* MMShopCartVC.m */,
+			);
+			path = Module_ShopCart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,7 +321,9 @@
 			files = (
 				E03292022114461900152273 /* Target_forum.m in Sources */,
 				E03291F9211435F700152273 /* MMSpecialTopicVC.m in Sources */,
+				E03292142114521400152273 /* MMRouter+UserCenterAction.m in Sources */,
 				E03292092114490500152273 /* MMRouter+AlertAction.m in Sources */,
+				E03292212114579F00152273 /* MMShopCartVC.m in Sources */,
 				E03291F6211435E900152273 /* MMGoodsDetailVC.m in Sources */,
 				E03291F32114338500152273 /* UIViewController+MMExtension.m in Sources */,
 				E03291EC211432BA00152273 /* MMRouter+MallActions.m in Sources */,
@@ -275,12 +331,16 @@
 				E03291E621142EC300152273 /* MMWalletVC.m in Sources */,
 				E03291DA21142DD000152273 /* MMRouter.m in Sources */,
 				E03291E021142EB200152273 /* MMForumVC.m in Sources */,
+				E03292172114527200152273 /* MMUserCenterVC.m in Sources */,
 				E03291E321142EBB00152273 /* MMMallVC.m in Sources */,
 				E03291FC211445ED00152273 /* MMRouter+WalletAction.m in Sources */,
+				E032921B2114532E00152273 /* Target_shopCart.m in Sources */,
+				E0329211211451F100152273 /* Target_userCenter.m in Sources */,
 				E03291C221142DA300152273 /* ViewController.m in Sources */,
 				E03291FF2114460900152273 /* Target_wallet.m in Sources */,
 				E03291CD21142DA400152273 /* main.m in Sources */,
 				E032920C2114493800152273 /* Target_alert.m in Sources */,
+				E032921E2114533B00152273 /* MMRouter+ShopCartAction.m in Sources */,
 				E03292052114462F00152273 /* MMRouter+ForumAction.m in Sources */,
 				E03291BF21142DA300152273 /* AppDelegate.m in Sources */,
 			);
@@ -424,14 +484,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G583SJY324;
 				INFOPLIST_FILE = MMRouterDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MMille.MMRouterDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poco.puzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Jane;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -440,14 +502,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MMRouterDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MMille.MMRouterDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poco.puzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

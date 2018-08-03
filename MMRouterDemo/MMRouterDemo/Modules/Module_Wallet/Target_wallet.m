@@ -21,4 +21,9 @@
                                                           animated:YES
                                                         completion:nil];
 }
+
+- (UIViewController *)Action_nativeFetchWalletVC:(NSDictionary *)params {
+    MMWalletVC *walletVC = [[MMWalletVC alloc] init];
+    return walletVC;
+}
 @end

@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    self.title = @"首页";
     UITableView *tableView = [UITableView new];
     tableView.delegate = self;
     tableView.dataSource = self;
