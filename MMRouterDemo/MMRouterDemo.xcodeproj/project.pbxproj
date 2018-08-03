@@ -26,6 +26,8 @@
 		E03291FF2114460900152273 /* Target_wallet.m in Sources */ = {isa = PBXBuildFile; fileRef = E03291FE2114460900152273 /* Target_wallet.m */; };
 		E03292022114461900152273 /* Target_forum.m in Sources */ = {isa = PBXBuildFile; fileRef = E03292012114461900152273 /* Target_forum.m */; };
 		E03292052114462F00152273 /* MMRouter+ForumAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E03292042114462F00152273 /* MMRouter+ForumAction.m */; };
+		E03292092114490500152273 /* MMRouter+AlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E03292082114490500152273 /* MMRouter+AlertAction.m */; };
+		E032920C2114493800152273 /* Target_alert.m in Sources */ = {isa = PBXBuildFile; fileRef = E032920B2114493800152273 /* Target_alert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,10 @@
 		E03292012114461900152273 /* Target_forum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_forum.m; sourceTree = "<group>"; };
 		E03292032114462F00152273 /* MMRouter+ForumAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMRouter+ForumAction.h"; sourceTree = "<group>"; };
 		E03292042114462F00152273 /* MMRouter+ForumAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MMRouter+ForumAction.m"; sourceTree = "<group>"; };
+		E03292072114490500152273 /* MMRouter+AlertAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMRouter+AlertAction.h"; sourceTree = "<group>"; };
+		E03292082114490500152273 /* MMRouter+AlertAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MMRouter+AlertAction.m"; sourceTree = "<group>"; };
+		E032920A2114493800152273 /* Target_alert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_alert.h; sourceTree = "<group>"; };
+		E032920B2114493800152273 /* Target_alert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_alert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,9 @@
 		E03291BC21142DA300152273 /* MMRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E0329206211448C400152273 /* Module_AlertView */,
 				E03291F02114336100152273 /* Category */,
-				E03291DB21142E5300152273 /* Module_ Forum */,
+				E03291DB21142E5300152273 /* Module_Forum */,
 				E03291DC21142E5300152273 /* Module_Mall */,
 				E03291DD21142E5300152273 /* Module_Wallet */,
 				E03291BD21142DA300152273 /* AppDelegate.h */,
@@ -125,7 +132,7 @@
 			path = ../MMRouter;
 			sourceTree = "<group>";
 		};
-		E03291DB21142E5300152273 /* Module_ Forum */ = {
+		E03291DB21142E5300152273 /* Module_Forum */ = {
 			isa = PBXGroup;
 			children = (
 				E03292032114462F00152273 /* MMRouter+ForumAction.h */,
@@ -135,7 +142,7 @@
 				E03291DE21142EB200152273 /* MMForumVC.h */,
 				E03291DF21142EB200152273 /* MMForumVC.m */,
 			);
-			path = "Module_ Forum";
+			path = Module_Forum;
 			sourceTree = "<group>";
 		};
 		E03291DC21142E5300152273 /* Module_Mall */ = {
@@ -175,6 +182,17 @@
 				E03291F22114338500152273 /* UIViewController+MMExtension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		E0329206211448C400152273 /* Module_AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E03292072114490500152273 /* MMRouter+AlertAction.h */,
+				E03292082114490500152273 /* MMRouter+AlertAction.m */,
+				E032920A2114493800152273 /* Target_alert.h */,
+				E032920B2114493800152273 /* Target_alert.m */,
+			);
+			path = Module_AlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +267,7 @@
 			files = (
 				E03292022114461900152273 /* Target_forum.m in Sources */,
 				E03291F9211435F700152273 /* MMSpecialTopicVC.m in Sources */,
+				E03292092114490500152273 /* MMRouter+AlertAction.m in Sources */,
 				E03291F6211435E900152273 /* MMGoodsDetailVC.m in Sources */,
 				E03291F32114338500152273 /* UIViewController+MMExtension.m in Sources */,
 				E03291EC211432BA00152273 /* MMRouter+MallActions.m in Sources */,
@@ -261,6 +280,7 @@
 				E03291C221142DA300152273 /* ViewController.m in Sources */,
 				E03291FF2114460900152273 /* Target_wallet.m in Sources */,
 				E03291CD21142DA400152273 /* main.m in Sources */,
+				E032920C2114493800152273 /* Target_alert.m in Sources */,
 				E03292052114462F00152273 /* MMRouter+ForumAction.m in Sources */,
 				E03291BF21142DA300152273 /* AppDelegate.m in Sources */,
 			);
