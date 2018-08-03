@@ -1,5 +1,5 @@
 //
-//  MMWalletViewController.h
+//  MMSpecialTopicVC.h
 //  MMRouterDemo
 //
 //  Created by xueMingLuan on 2018/8/3.
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMWalletViewController : UIViewController
+@interface MMSpecialTopicVC : UIViewController
+
+- (instancetype)initWithTopicId:(NSString *)topicId;
 
 @end
 

@@ -6,19 +6,24 @@
 //  Copyright © 2018 xueMingLuan. All rights reserved.
 //
 
-#import "MMForumViewController.h"
+#import "MMForumVC.h"
 
-@interface MMForumViewController ()
+@interface MMForumVC ()
 
 @end
 
-@implementation MMForumViewController
+@implementation MMForumVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"论坛首页";
+    self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

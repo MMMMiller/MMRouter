@@ -16,4 +16,4 @@ Pod::Spec.new do |s|
   s.libraries = 'z', 'sqlite3'
   s.frameworks = 'UIKit', 'CoreFoundation'
 end
-#pod trunk push MMScrollBanner.podspec --allow-warnings
+#pod trunk push MMRouter.podspec --allow-warnings

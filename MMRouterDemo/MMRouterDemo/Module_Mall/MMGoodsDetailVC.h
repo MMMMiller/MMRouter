@@ -1,5 +1,5 @@
 //
-//  MMMallViewController.h
+//  MMGoodsDetailVC.h
 //  MMRouterDemo
 //
 //  Created by xueMingLuan on 2018/8/3.
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMMallViewController : UIViewController
+@interface MMGoodsDetailVC : UIViewController
+
+- (instancetype)initWithGoodsId:(NSString *)goodsId;
 
 @end
 

@@ -6,17 +6,23 @@
 //  Copyright © 2018 xueMingLuan. All rights reserved.
 //
 
-#import "MMWalletViewController.h"
+#import "MMWalletVC.h"
 
-@interface MMWalletViewController ()
+@interface MMWalletVC ()
 
 @end
 
-@implementation MMWalletViewController
+@implementation MMWalletVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"钱包首页";
+    self.view.backgroundColor = [UIColor lightGrayColor];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

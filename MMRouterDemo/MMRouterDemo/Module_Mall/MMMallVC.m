@@ -6,19 +6,24 @@
 //  Copyright © 2018 xueMingLuan. All rights reserved.
 //
 
-#import "MMMallViewController.h"
+#import "MMMallVC.h"
 
-@interface MMMallViewController ()
+@interface MMMallVC ()
 
 @end
 
-@implementation MMMallViewController
+@implementation MMMallVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"商城首页";
+    self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
